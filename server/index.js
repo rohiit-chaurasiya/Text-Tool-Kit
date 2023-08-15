@@ -4,13 +4,12 @@ const cors = require('cors')
 const RegisterModel = require('./models/Register')
 
 const app = express()
-app.use(cors(
-    {
-        origin: ["https://text-toolkit.vercel.app"],
-        methods: ["POST", "GET"],
-        credentials: true
-    }
-));
+app.use(cors({
+    origin: ['https://text-toolkit.vercel.app'],
+    methods: ['POST', 'GET'],
+    credentials: true
+}));
+
 app.use(express.json())
 
 mongoose.connect('mongodb+srv://rohiit:Kietian9211@cluster0.kw9fxdl.mongodb.net/texttoolkit?retryWrites=true&w=majority');
