@@ -4,7 +4,13 @@ const cors = require('cors')
 const RegisterModel = require('./models/Register')
 
 const app = express()
-app.use(cors());
+app.use(cors(
+    {
+        origin: [""],
+        methods: ["POST", "GET"],
+        credentials: true
+    }
+));
 app.use(express.json())
 
 mongoose.connect('mongodb+srv://rohiit:Kietian9211@cluster0.kw9fxdl.mongodb.net/texttoolkit?retryWrites=true&w=majority');
