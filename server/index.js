@@ -12,7 +12,7 @@ app.use(cors({
 
 app.use(express.json())
 
-mongoose.connect('mongodb+srv://rohiit:Kietian9211@cluster0.kw9fxdl.mongodb.net/texttoolkit?retryWrites=true&w=majority');
+mongoose.connect('mongodb+srv://texttoolkit:Kietian9211@cluster0.pogtkx8.mongodb.net/texttoolkit?retryWrites=true&w=majority');
 
 
 app.get("/", (req, res) => {
