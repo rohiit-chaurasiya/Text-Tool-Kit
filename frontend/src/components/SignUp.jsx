@@ -52,7 +52,7 @@ const SignUp=()=> {
             const data = await response.json();
             const name = data.result;
             console.log(data.userName);
-            // navigate('/signin');
+            navigate('/signin');
         }
         else{
             console.log("Sign Up Failed")
